@@ -1,0 +1,36 @@
+{
+  "exp_name": "NAS for Sequential Recommendation",
+  "logging_dir": "../SLOG/",
+
+  "cuda": true,
+  "gpu_device": 0,
+  "seed": 0,
+
+  "autosr_epsilon_initial": 1.0,
+  "autosr_epsilon_minimum": 0.05,
+  "autosr_epsilon_decay_rate": 0.999,
+  "autosr_rounds": 2000,
+  "autosr_batch_size": 64,
+  "autosr_learning_rate": 0.01,
+  "autosr_update_frequency": 1,
+
+  "random_rounds": 2500,
+
+  "evolution_rounds": 50,
+  "evolution_population_num": 50,
+
+  "rl_rounds": 2064,
+  "rl_learning_rate": 3.5e-4,
+  "rl_ema_baseline_decay": 0.95,
+
+  "code_dataset": "Movies_and_TV",
+  "code_input_length": 5,
+  "code_target_length": 1,
+  "code_neg_length": 1,
+  "code_epoch_num": 5,
+  "code_batch_size": 1024,
+  "code_dropout": 0.5,
+
+  "code_topk": 10,
+  "code_eval_item_num": 99
+}

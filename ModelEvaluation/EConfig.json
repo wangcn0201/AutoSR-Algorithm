@@ -1,0 +1,22 @@
+{
+  "exp_name": "Evaluation of Sequential Recommendation Models",
+  "logging_dir": "../ELOG/",
+
+  "cuda": true,
+  "gpu_device": 0,
+  "seed": 0,
+
+  "code_dataset": "Video_Games",
+  "code_input_length": 5,
+  "code_target_length": 1,
+  "code_neg_length": 1,
+  "code_epoch_num": 150,
+  "code_batch_size": 1024,
+  "code_dropout": 0.5,
+
+  "code_topk": 10,
+  "code_eval_item_num": 99,
+
+  "code_mode": "train",
+  "code_model_load_dir": ""
+}
